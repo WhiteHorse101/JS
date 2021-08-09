@@ -25,3 +25,17 @@ let x = 20; // this varibale has been declared
 //let x ;     // here you will get error becase the variable named 'x' has already been declared 
 console.log(x);
 
+
+/*
+
+    This is an Alertbox created by using alert function, in this method you can pass values or strings that will be displayed 
+    in the alertbox. 
+    There are 2 ways of creating an alertbox one is by using window.alert, in this window is a global scope object it is optional
+    to use window to create an alertbox. 
+
+    here i have created 2 alertboxes first the alertbox using alert will be displayed and then the one made using window
+
+    So these are 2 ways to create Alertboxes in JS
+*/ 
+alert('This is an alertbox');
+window.alert('Alert using window');
