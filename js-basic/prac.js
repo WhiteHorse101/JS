@@ -9,21 +9,31 @@ console.log("Type of variable 'b': ",typeof(b)) // here you can see some change 
 
 //Variable Scopes : 
 
-/*Here you can see variable 'z' has been declared and initizlized twice and 
-its type is 'var', var type lets you redeclare variables with same name*/ 
 
-var z =50;          
-console.log(z);
+fun(); // here you can see the function fun has been called even before it is created to find how this works visit the link that I have provided at the end of this file. 
 
-var z=100; 
-console.log(z);
+c =100; //Global
+var e = 200; // Function Scope
+let d =300; // Block Scope
 
-/*Here you can see variable 'x' has been declared twice and 
-its type is 'let', let type dose not allow you to redeclare variables with same name*/ 
+function fun(){
 
-let x = 20; // this varibale has been declared 
-//let x ;     // here you will get error becase the variable named 'x' has already been declared 
-console.log(x);
+    var r = 20; // function scope limited till fun() function
+    s = "Global"; // global variable s can be accessed even outside the function fun [eg demonstrated below]
+    if(r==20){
+        let f = 10; // block scope limited till if block 
+        console.log("Inside Func", f);
+        console.log("Value of r:",r);
+        console.log("Value of r:",r);
+
+    }
+   // console.log("Outside Func",f) // at this line you will get error because variable f if declared with let and let has block scope i.e its limited only till if block
+   console.log(s);
+   console.log(s);
+
+}
+// console.log(r); // here variable r is having only function scope so it throw error
+console.log(s);
 
 
 /*
@@ -39,3 +49,5 @@ console.log(x);
 */ 
 alert('This is an alertbox');
 window.alert('Alert using window');
+
+
