@@ -1,7 +1,7 @@
 /*
     Object Oriented Programming in JS
     JS allows one to create objects without its class 
-
+    This was one way of creating js objects, this method is called as JSON [Javascript Object Notation]
 */ 
 
 
