@@ -31,3 +31,8 @@ function outer(arg1){
 let x = outer('param1')
 
 x('param2')
+
+function checkthis(){
+
+    console.log(this)
+}
